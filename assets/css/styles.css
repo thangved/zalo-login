@@ -1,0 +1,165 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	background-image: url(../img/bg.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	width: 400px;
+}
+
+.top {
+	margin-top: 70px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.logo {
+	width: 114px;
+}
+
+.top span {
+	font-size: 17.6px;
+	text-align: center;
+	margin-top: 18px;
+	line-height: 1.5;
+}
+
+.form-card {
+	width: 400px;
+	background: #fff;
+	box-shadow: 0 8px 24px rgb(21 48 142 / 14%);
+	border-radius: 2px;
+	margin-top: 18px;
+}
+
+.form-card .tabs {
+	display: flex;
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #ddd;
+}
+
+.form-card .tabs .tab {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 14px;
+	color: #6f6f6f;
+	position: relative;
+}
+
+.form-card .tabs .tab:hover {
+	color: #444;
+}
+
+.tab + .tab::after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 0.1px;
+	height: 18px;
+	background: #ddd;
+	left: 0;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.form-card .tabs .tab.active {
+	color: #333;
+	font-weight: bold;
+}
+
+.form-card .tabs .tab.active::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 120px;
+	height: 0.1px;
+	background: #000;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.form-card form {
+	padding: 30px 45px;
+}
+
+.input-group {
+	font-size: 14px;
+	color: #555;
+	padding: 5px 0;
+	display: flex;
+	align-items: center;
+	height: 38px;
+	margin-bottom: 18px;
+	border-bottom: 1px solid #ddd;
+}
+
+.input-group .icon {
+	margin-right: 5px;
+}
+
+.input-group input {
+	flex: 1;
+	border: none;
+	outline: none;
+	margin-left: 10px;
+}
+
+.select-code {
+	padding: 0 6px 0 18px;
+}
+
+.spacer-vertical {
+	display: block;
+	width: 100%;
+	height: 10px;
+}
+
+.button {
+	font-size: 0.875rem;
+	background-color: #0190f3;
+	color: #fff;
+	padding: 0 20px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	user-select: none;
+	border-radius: 5px;
+	display: block;
+	border: none;
+	outline: none;
+	width: 100%;
+}
+
+.button:disabled {
+	opacity: 0.5;
+}
+
+.button.outline {
+	background: #fff;
+	color: #0190f3;
+	border: 1px solid #ddd;
+}
+

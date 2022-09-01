@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Đăng nhập tài khoản Zalo</title>
+		<link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+		/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="top">
+				<img src="./assets/img/zlogo.png" class="logo" alt="" />
+				<span>
+					Đăng nhập tài khoản Zalo <br />
+					để kết nối với ứng dụng Zalo Web
+				</span>
+			</div>
+
+			<div class="form-card">
+				<div class="tabs">
+					<div class="tab">Với mã QR</div>
+					<div class="tab active">Với số điện thoại</div>
+				</div>
+
+				<form>
+					<div class="input-group">
+						<span class="icon">
+							<i class="fa-solid fa-mobile-screen-button"></i>
+						</span>
+
+						<span class="select-code">
+							+84
+							<i class="fa-solid fa-caret-down"></i>
+						</span>
+
+						<input
+							type="tel"
+							autocomplete="tel"
+							placeholder="Số điện thoại"
+						/>
+					</div>
+
+					<div class="input-group">
+						<span class="icon">
+							<i class="fa-solid fa-lock"></i>
+						</span>
+
+						<input
+							type="password"
+							autocomplete="current-password"
+							placeholder="Mật khẩu"
+						/>
+					</div>
+
+					<div class="spacer-vertical"></div>
+
+					<button disabled class="button">
+						Đăng nhập với mật khẩu
+					</button>
+
+					<div class="spacer-vertical"></div>
+
+					<button disabled class="button outline">
+						Gửi yêu cầu đăng nhập
+					</button>
+
+					<div class="spacer-vertical"></div>
+
+					<span
+						style="
+							font-size: 13px;
+							text-align: center;
+							display: block;
+						"
+					>
+						Quên mật khẩu
+					</span>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+
