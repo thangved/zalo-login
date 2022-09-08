@@ -25,66 +25,71 @@
 
 			<div class="form-card">
 				<div class="tabs">
-					<div class="tab">Với mã QR</div>
-					<div class="tab active">Với số điện thoại</div>
+					<div class="tab" data-target="#login-with-qr-code">
+						Với mã QR
+					</div>
+					<div
+						class="tab active"
+						data-target="#login-with-phone-and-password"
+					>
+						Với số điện thoại
+					</div>
 				</div>
 
-				<form>
-					<div class="input-group">
-						<span class="icon">
-							<i class="fa-solid fa-mobile-screen-button"></i>
-						</span>
-
-						<span class="select-code">
-							+84
-							<i class="fa-solid fa-caret-down"></i>
-						</span>
-
-						<input
-							type="tel"
-							autocomplete="tel"
-							placeholder="Số điện thoại"
-						/>
+				<div class="wrapper">
+					<div id="login-with-qr-code" style="display: none">
+						<div class="qr-code">
+							<img src="./assets/img/qr.png" alt="" />
+							<span>Quét mã QR bằng Zalo để đăng nhập</span>
+						</div>
 					</div>
-
-					<div class="input-group">
-						<span class="icon">
-							<i class="fa-solid fa-lock"></i>
+					<form id="login-with-phone-and-password">
+						<div class="input-group">
+							<span class="icon">
+								<i class="fa-solid fa-mobile-screen-button"></i>
+							</span>
+							<span class="select-code">
+								+84
+								<i class="fa-solid fa-caret-down"></i>
+							</span>
+							<input
+								type="tel"
+								autocomplete="tel"
+								placeholder="Số điện thoại"
+							/>
+						</div>
+						<div class="input-group">
+							<span class="icon">
+								<i class="fa-solid fa-lock"></i>
+							</span>
+							<input
+								type="password"
+								autocomplete="current-password"
+								placeholder="Mật khẩu"
+							/>
+						</div>
+						<div class="spacer-vertical"></div>
+						<button disabled class="button">
+							Đăng nhập với mật khẩu
+						</button>
+						<div class="spacer-vertical"></div>
+						<button disabled class="button outline">
+							Gửi yêu cầu đăng nhập
+						</button>
+						<div class="spacer-vertical"></div>
+						<span
+							style="
+								font-size: 13px;
+								text-align: center;
+								display: block;
+							"
+						>
+							Quên mật khẩu
 						</span>
-
-						<input
-							type="password"
-							autocomplete="current-password"
-							placeholder="Mật khẩu"
-						/>
-					</div>
-
-					<div class="spacer-vertical"></div>
-
-					<button disabled class="button">
-						Đăng nhập với mật khẩu
-					</button>
-
-					<div class="spacer-vertical"></div>
-
-					<button disabled class="button outline">
-						Gửi yêu cầu đăng nhập
-					</button>
-
-					<div class="spacer-vertical"></div>
-
-					<span
-						style="
-							font-size: 13px;
-							text-align: center;
-							display: block;
-						"
-					>
-						Quên mật khẩu
-					</span>
-				</form>
+					</form>
+				</div>
 			</div>
 		</div>
+		<script src="./assets/js/main.js"></script>
 	</body>
 </html>
-
