@@ -1,3 +1,24 @@
+const tabButtons = document.querySelectorAll(".tab");
+tabButtons.forEach((button) => {
+	button.addEventListener("click", (event) => {
+		tabButtons.forEach((btn) => {
+			btn.classList.remove("active");
+			document
+				.querySelector(
+					btn.getAttribute("data-target")
+				)
+				.classList.add("hidden");
+		});
+
+		button.classList.add("active");
+		document
+			.querySelector(
+				button.getAttribute("data-target")
+			)
+			.classList.remove("hidden");
+	});
+});
+
 document
 	.querySelector("#select-code-button")
 	.addEventListener("click", (event) => {
