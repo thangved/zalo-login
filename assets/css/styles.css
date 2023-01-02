@@ -73,7 +73,7 @@ body {
 }
 
 .tab + .tab::after {
-	content: '';
+	content: "";
 	display: block;
 	position: absolute;
 	width: 0.1px;
@@ -90,7 +90,7 @@ body {
 }
 
 .form-card .tabs .tab.active::before {
-	content: '';
+	content: "";
 	display: block;
 	position: absolute;
 	width: 120px;
