@@ -186,3 +186,45 @@ body {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
+.hidden {
+	display: none;
+}
+
+.select-code-modal {
+	width: 250px;
+	height: 300px;
+	background-color: white;
+	border: 1px solid #ddd;
+	position: absolute;
+	z-index: 1000;
+	box-shadow: 0 0 5px #00000010;
+	overflow: auto;
+}
+
+.select-code-modal::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+.select-code-modal::-webkit-scrollbar-thumb {
+	background-color: #ddd;
+	border-radius: 100px;
+}
+.code-item {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	cursor: pointer;
+}
+.code-item:hover {
+	background-color: #fafafa;
+}
+.code-item img {
+	width: 18px;
+}
+.code-item span {
+	margin-left: 10px;
+}
+.code-item .country {
+	color: black;
+}
